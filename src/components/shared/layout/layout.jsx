@@ -4,11 +4,14 @@ import React from 'react';
 
 import styles from './layout.module.scss';
 
+import Footer from 'components/shared/footer';
+
 const cx = classNames.bind(styles);
 
 const Layout = ({ children }) => (
   <div className={cx('wrapper')}>
     <main className={cx('content')}>{children}</main>
+    <Footer />
   </div>
 );
 
