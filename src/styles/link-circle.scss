@@ -1,0 +1,45 @@
+.link-circle {
+  position: relative;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $color-primary;
+  text-decoration: none;
+  transition: $transition-base;
+
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: 12px;
+    z-index: -1;
+    width: 48px;
+    height: 48px;
+    content: '';
+    border: 1px solid $color-secondary;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &::before {
+      animation: circle $transition-base normal;
+      animation-fill-mode: forwards;
+
+      @keyframes circle {
+        0% {
+          top: -3px;
+          left: 12px;
+        }
+
+        100% {
+          top: 0;
+          width: 90%;
+          height: 100%;
+          background-color: $color-secondary;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
