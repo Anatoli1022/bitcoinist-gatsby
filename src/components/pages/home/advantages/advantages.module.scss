@@ -1,0 +1,32 @@
+.advantages {
+  margin-top: 76px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 138px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.item-number {
+  display: block;
+  font-size: 160px;
+  font-weight: 700;
+  line-height: 147px;
+}
+
+.item-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 29px;
+  color: $color-tertiary;
+}
