@@ -3,6 +3,8 @@ import classNames from 'classnames/bind';
 
 import styles from './footer.module.scss';
 
+import logo from '../../../images/logo.svg';
+
 const cx = classNames.bind(styles);
 
 const Footer = () => (
@@ -24,7 +26,9 @@ const Footer = () => (
         </li>
       </ul>
       <div className={cx('footer-copyright')}>
-        <span className={cx('footer-ivax')}>ivax</span>
+        <a href="/">
+          <img src={logo} alt="" loading="lazy" aria-hidden="true" />
+        </a>
         <p className={cx('copyright')}>Copyright © 2022 IVAX</p>
         <div>
           <a href="" className={cx('link-information')}>
