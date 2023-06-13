@@ -19,7 +19,7 @@ const cx = classNames.bind(styles);
 
 const Projects = () => (
   <section className={cx('projects')}>
-    <div className={cx('container-large')}>
+    <div className={cx('container')}>
       <h2 className={cx('title')}>
         Latest <span className={cx('title-span')}>Projects</span>
       </h2>

@@ -36,7 +36,7 @@
 
     .arrow {
       opacity: 1;
-      animation: arrow $transition-base normal;
+      animation: arrow 0.4s normal;
 
       @keyframes arrow {
         0% {
@@ -45,8 +45,8 @@
         }
 
         100% {
-          top: 30%;
-          left: 50%;
+          top: 32%;
+          left: 46%;
         }
       }
     }
@@ -59,16 +59,16 @@
 
 .block {
   position: absolute;
-  top: 35%;
-  left: 35%;
+  top: 34%;
+  left: 34%;
   opacity: 0;
   transition: $transition-base;
 }
 
 .arrow {
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 32%;
+  left: 46%;
   opacity: 0;
   transition: $transition-base;
 }
