@@ -3,7 +3,9 @@ import React from 'react';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 
+import Hero from 'components/pages/home/hero/hero';
 import Advantages from 'components/pages/home/advantages';
+import Things from 'components/pages/home/things';
 import Web from 'components/pages/home/web';
 import Trust from 'components/pages/home/trust';
 import Projects from 'components/pages/home/projects';
@@ -12,7 +14,9 @@ import Team from 'components/pages/home/team';
 
 const HomePage = () => (
   <Layout>
+    <Hero />
     <Advantages />
+    <Things />
     <Web />
     <Trust />
     <Projects />
