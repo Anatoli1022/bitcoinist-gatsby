@@ -1,7 +1,6 @@
 .things {
   padding-top: 134px;
   padding-bottom: 134px;
-  margin-top: 160px;
   background-color: #fbfbfb;
 }
 
@@ -38,19 +37,6 @@
   background-color: $color-secondary;
   border-radius: 50%;
   opacity: 0.8;
-  animation: 2s light infinite;
-
-  @keyframes light {
-    0% {
-      box-shadow: 0 0 2px 0 $color-secondary;
-      opacity: 0.4;
-    }
-
-    100% {
-      box-shadow: 0 0 10px 2px $color-secondary;
-      opacity: 1;
-    }
-  }
 
   &:nth-child(2) {
     left: 25%;
@@ -70,6 +56,48 @@
 
   &:nth-child(6) {
     left: 85%;
+  }
+
+  &:nth-child(odd) {
+    animation: lightOdd 2s infinite;
+
+    @keyframes lightOdd {
+      0% {
+        box-shadow: 0 0 10px 2px $color-secondary;
+        opacity: 1;
+      }
+
+      50% {
+        box-shadow: 0 0 2px 0 $color-secondary;
+        opacity: 0.4;
+      }
+
+      100% {
+        box-shadow: 0 0 10px 2px $color-secondary;
+        opacity: 1;
+      }
+    }
+  }
+
+  &:nth-child(even) {
+    animation: lightEven 2s infinite;
+
+    @keyframes lightEven {
+      0% {
+        box-shadow: 0 0 2px 0 $color-secondary;
+        opacity: 0.4;
+      }
+
+      50% {
+        box-shadow: 0 0 10px 2px $color-secondary;
+        opacity: 1;
+      }
+
+      100% {
+        box-shadow: 0 0 2px 0 $color-secondary;
+        opacity: 0.4;
+      }
+    }
   }
 }
 
