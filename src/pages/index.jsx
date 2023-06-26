@@ -5,6 +5,7 @@ import SEO from 'components/shared/seo';
 
 import Hero from 'components/pages/home/hero/hero';
 import Advantages from 'components/pages/home/advantages';
+import Deliver from 'components/pages/home/deliver/deliver';
 import Things from 'components/pages/home/things';
 import Web from 'components/pages/home/web';
 import Trust from 'components/pages/home/trust';
@@ -16,6 +17,7 @@ const HomePage = () => (
   <Layout>
     <Hero />
     <Advantages />
+    <Deliver />
     <Things />
     <Web />
     <Trust />
