@@ -3,9 +3,11 @@
   margin-bottom: 0;
   font-size: 64px;
   font-weight: 700;
+
+  @include md-down {
+    font-size: 48px;
+  }
 }
-
-
 
 .title-span {
   color: $color-secondary;
