@@ -1,6 +1,11 @@
 .footer {
   padding-bottom: 88px;
   margin-top: 160px;
+
+  @include sm-down {
+    padding-bottom: 60px;
+    margin-top: 80px;
+  }
 }
 
 .list {
@@ -11,6 +16,24 @@
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+
+  @include sm-down {
+    flex-direction: column;
+    row-gap: 40px;
+    column-gap: 0;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.item {
+  @include sm-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .title {
@@ -60,6 +83,12 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 70px;
+
+  @include sm-down {
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 48px;
+  }
 }
 
 .copyright {
