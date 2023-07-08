@@ -1,6 +1,11 @@
 .deliver {
   padding-bottom: 160px;
   margin-top: 100px;
+
+  @include sm-down {
+    padding-bottom: 80px;
+    margin-top: 80px;
+  }
 }
 
 .content {
@@ -8,6 +13,16 @@
   align-items: center;
   justify-content: space-around;
   margin-top: 64px;
+
+  @include sm-down {
+    flex-direction: column;
+  }
+}
+
+.wrapper-light {
+  @include sm-down {
+    order: -1;
+  }
 }
 
 .information-title {
@@ -26,6 +41,15 @@
   &:last-child {
     margin-top: 140px;
   }
+
+  @include sm-down {
+    padding: 32px 40px 48px;
+    margin-top: 32px;
+
+    &:last-child {
+      margin-top: 32px;
+    }
+  }
 }
 
 .information-first {
@@ -40,6 +64,12 @@
     border-radius: 50%;
     box-shadow: 0 0 10px 2px $color-secondary;
   }
+
+  @include sm-down {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .information-second {
@@ -53,6 +83,12 @@
     background-color: $color-secondary;
     border-radius: 50%;
     box-shadow: 0 0 10px 2px $color-secondary;
+  }
+
+  @include sm-down {
+    &::before {
+      display: none;
+    }
   }
 }
 

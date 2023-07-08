@@ -66,7 +66,7 @@ const Deliver = () => (
             </ul>
           </div>
         </div>
-        <div>
+        <div className={cx('wrapper-light')}>
           <img src={light} alt="" loading="lazy" aria-hidden="true" />
         </div>
         <div>
