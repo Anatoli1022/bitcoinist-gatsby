@@ -13,6 +13,11 @@
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+
+  @include sm-down {
+    row-gap: 64px;
+    column-gap: 16px;
+  }
 }
 
 .item-number {
@@ -20,6 +25,10 @@
   font-size: 160px;
   font-weight: 700;
   line-height: 147px;
+
+  @include sm-down {
+    font-size: 96px;
+  }
 }
 
 .item-text {
@@ -29,4 +38,8 @@
   font-weight: 700;
   line-height: 29px;
   color: $color-tertiary;
+
+  @include sm-down {
+    max-width: 150px;
+  }
 }
