@@ -6,6 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include md-down {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .hero-title {
@@ -14,6 +19,10 @@
   margin-bottom: 0;
   font-size: 140px;
   font-weight: 700;
+
+  @include sm-down {
+    font-size: 56px;
+  }
 }
 
 .hero-span-text {
@@ -48,6 +57,10 @@
 
 .light-wrapper {
   position: relative;
+
+  @include md-down {
+    order: -1;
+  }
 }
 
 .ellipse {
@@ -137,4 +150,8 @@
       }
     }
   }
+}
+
+.light {
+  max-width: 400px;
 }

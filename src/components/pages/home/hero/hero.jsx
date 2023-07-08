@@ -35,7 +35,7 @@ const Hero = () => (
         <img src={ellipse_2} alt="" loading="eager" aria-hidden="true" className={cx('ellipse')} />
         <img src={ellipse_3} alt="" loading="eager" aria-hidden="true" className={cx('ellipse')} />
         <img src={ellipse_4} alt="" loading="eager" aria-hidden="true" className={cx('ellipse')} />
-        <img src={light} alt="" loading="eager" aria-hidden="true" />
+        <img src={light} alt="" loading="eager" aria-hidden="true" className={cx('light')} />
       </div>
     </div>
   </section>
