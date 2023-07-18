@@ -1,19 +1,12 @@
 import React from 'react';
 import classNames from 'classnames/bind';
-// import { StaticImage } from 'gatsby-plugin-image';
 
 import styles from './projects.module.scss';
 
 import block from './images/projects-block.svg';
 import arrow from './images/projects-arrow.svg';
-import image_1 from './images/projects-image-1.jpg';
-import image_2 from './images/projects-image-2.jpg';
-import image_3 from './images/projects-image-3.jpg';
-import image_4 from './images/projects-image-4.jpg';
-import image_5 from './images/projects-image-5.jpg';
-import image_6 from './images/projects-image-6.jpg';
-import image_7 from './images/projects-image-7.jpg';
-import image_8 from './images/projects-image-8.jpg';
+
+import data from './data/projects';
 
 const cx = classNames.bind(styles);
 
@@ -24,78 +17,25 @@ const Projects = () => (
         Latest <span className={cx('title-span')}>Projects</span>
       </h2>
       <ul className={cx('list')}>
-        <li className={cx('list-item')}>
-          <a href="" className={cx('item-link')} target="_blank" rel="noreferrer">
-            <img src={image_1} alt="" aria-hidden="true" className={cx('image')} />
-            <img src={block} alt="" aria-hidden="true" className={cx('block')} />
-            <img src={arrow} alt="" aria-hidden="true" className={cx('arrow')} />
-          </a>
-          <span className={cx('item-span')}>desing</span>
-          <p className={cx('item-text')}>Unique product design</p>
-        </li>
-        <li className={cx('list-item')}>
-          <a href="" className={cx('item-link')} target="_blank" rel="noreferrer">
-            <img src={image_2} alt="" aria-hidden="true" className={cx('image')} />
-            <img src={block} alt="" aria-hidden="true" className={cx('block')} />
-            <img src={arrow} alt="" aria-hidden="true" className={cx('arrow')} />
-          </a>
-          <span className={cx('item-span')}>development</span>
-          <p className={cx('item-text')}>Development software</p>
-        </li>
-        <li className={cx('list-item')}>
-          <a href="" className={cx('item-link')} target="_blank" rel="noreferrer">
-            <img src={image_3} alt="" aria-hidden="true" className={cx('image')} />
-            <img src={block} alt="" aria-hidden="true" className={cx('block')} />
-            <img src={arrow} alt="" aria-hidden="true" className={cx('arrow')} />
-          </a>
-          <span className={cx('item-span')}>desing</span>
-          <p className={cx('item-text')}>Technology process</p>
-        </li>
-        <li className={cx('list-item')}>
-          <a href="" className={cx('item-link')} target="_blank" rel="noreferrer">
-            <img src={image_4} alt="" aria-hidden="true" className={cx('image')} />
-            <img src={block} alt="" aria-hidden="true" className={cx('block')} />
-            <img src={arrow} alt="" aria-hidden="true" className={cx('arrow')} />
-          </a>
-          <span className={cx('item-span')}>desing</span>
-          <p className={cx('item-text')}>Unique product design</p>
-        </li>
-        <li className={cx('list-item')}>
-          <a href="" className={cx('item-link')} target="_blank" rel="noreferrer">
-            <img src={image_5} alt="" aria-hidden="true" className={cx('image')} />
-            <img src={block} alt="" aria-hidden="true" className={cx('block')} />
-            <img src={arrow} alt="" aria-hidden="true" className={cx('arrow')} />
-          </a>
-          <span className={cx('item-span')}>development</span>
-          <p className={cx('item-text')}>Unique product design</p>
-        </li>
-        <li className={cx('list-item')}>
-          <a href="#" className={cx('item-link')} target="_blank" rel="noreferrer">
-            <img src={image_6} alt="" aria-hidden="true" className={cx('image')} />
-            <img src={block} alt="" aria-hidden="true" className={cx('block')} />
-            <img src={arrow} alt="" aria-hidden="true" className={cx('arrow')} />
-          </a>
-          <span className={cx('item-span')}>development | technology</span>
-          <p className={cx('item-text')}> Unique product design</p>
-        </li>
-        <li className={cx('list-item')}>
-          <a href="#" className={cx('item-link')} target="_blank" rel="noreferrer">
-            <img src={image_7} alt="" className={cx('image')} />
-            <img src={block} alt="" aria-hidden="true" className={cx('block')} />
-            <img src={arrow} alt="" aria-hidden="true" className={cx('arrow')} />
-          </a>
-          <span className={cx('item-span')}>development</span>
-          <p className={cx('item-text')}>Unique product design</p>
-        </li>
-        <li className={cx('list-item')}>
-          <a href="#" className={cx('item-link')} target="_blank" rel="noreferrer">
-            <img src={image_8} alt="" aria-hidden="true" className={cx('image')} />
-            <img src={block} alt="" aria-hidden="true" className={cx('block')} />
-            <img src={arrow} alt="" aria-hidden="true" className={cx('arrow')} />
-          </a>
-          <span className={cx('item-span')}>desing</span>
-          <p className={cx('item-text')}>Unique product design</p>
-        </li>
+        {data.map((datas, index) => {
+          return (
+            <li className={cx('list-item')} key={index}>
+              <a href="" className={cx('item-link')} target="_blank" rel="noreferrer">
+                <img
+                  src={datas.image.default}
+                  alt=""
+                  aria-hidden="true"
+                  className={cx('image')}
+                  loading="lazy"
+                />
+                <img src={block} alt="" aria-hidden="true" className={cx('block')} loading="lazy" />
+                <img src={arrow} alt="" aria-hidden="true" className={cx('arrow')} loading="lazy" />
+              </a>
+              <span className={cx('item-span')}>{datas.span}</span>
+              <p className={cx('item-text')}>{datas.text}</p>
+            </li>
+          );
+        })}
       </ul>
       <div className={cx('wrapper-link')}>
         <a href="#" className={cx('link-circle')}>
