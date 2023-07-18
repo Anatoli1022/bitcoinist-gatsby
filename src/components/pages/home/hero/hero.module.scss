@@ -153,5 +153,7 @@
 }
 
 .light {
-  max-width: 400px;
+  @include sm-down {
+    max-width: 400px;
+  }
 }
