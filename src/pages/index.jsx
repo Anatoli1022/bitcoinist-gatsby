@@ -11,8 +11,8 @@ import Web from 'components/pages/home/web';
 import Trust from 'components/pages/home/trust';
 import Projects from 'components/pages/home/projects';
 import Technologies from 'components/pages/home/technologies';
-import TeamBuilds from 'components/pages/home/teamBuilds';
 import Team from 'components/pages/home/team';
+import TeamBuilds from 'components/pages/home/teamBuilds';
 import Tell from 'components/pages/home/tell';
 
 const HomePage = () => (
@@ -25,8 +25,8 @@ const HomePage = () => (
     <Trust />
     <Projects />
     <Technologies />
-    <TeamBuilds />
     <Team />
+    <TeamBuilds />
     <Tell />
   </Layout>
 );
