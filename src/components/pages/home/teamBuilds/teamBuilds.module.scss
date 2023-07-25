@@ -16,6 +16,12 @@
   font-size: 26px;
   font-weight: 700;
   color: $color-white;
+
+  @include sm-down {
+    top: 78%;
+    left: 20px;
+    font-size: 22px;
+  }
 }
 
 .profession {
@@ -27,6 +33,11 @@
   font-size: 20px;
   font-weight: 300;
   color: $color-secondary;
+
+  @include sm-down {
+    left: 20px;
+    font-size: 18px;
+  }
 }
 
 .wrapper {
@@ -44,12 +55,31 @@
       margin-right: auto;
       margin-left: auto;
       transform: translate3d(0, 0, 0) !important;
+
+      @include md-down {
+        width: 580px;
+      }
+
+      @include sm-down {
+        width: 375px;
+        height: 480px;
+      }
     }
 
     .swiper-slide {
       position: relative;
       width: 500px !important;
       height: 580px;
+
+      @include md-down {
+        width: 360px !important;
+        height: 440px !important;
+      }
+
+      @include sm-down {
+        width: 180px !important;
+        height: 350px !important;
+      }
     }
 
     .swiper-button-next {
@@ -60,6 +90,14 @@
       &::after {
         font-size: 24px;
         color: $color-secondary;
+      }
+
+      @include md-down {
+        right: 40%;
+      }
+
+      @include sm-down {
+        right: 35%;
       }
     }
 
@@ -72,6 +110,14 @@
         font-size: 24px;
         color: $color-primary;
       }
+
+      @include md-down {
+        left: 40%;
+      }
+
+      @include sm-down {
+        left: 35%;
+      }
     }
 
     .swiper-slide-active {
@@ -80,6 +126,16 @@
       width: 607px !important;
       height: 704px !important;
       transition: $transition-base;
+
+      @include md-down {
+        width: 467px !important;
+        height: 564px !important;
+      }
+
+      @include sm-down {
+        width: 310px !important;
+        height: 400px !important;
+      }
     }
   }
 }
