@@ -12,47 +12,49 @@ const Things = () => (
       <h2 className={cx('title', 'title-things')}>
         We promise <span className={cx('title-span')}>six things</span>
       </h2>
-      <div className={cx('content')}>
-        <div className={cx('wrapper-text')}>
-          <p className={cx('text')}>
-            Your deadline is <br /> our religion
-          </p>
+      <div className={cx('wrapper-content')}>
+        <div className={cx('content')}>
+          <div className={cx('wrapper-text')}>
+            <p className={cx('text')}>
+              Your deadline is <br /> our religion
+            </p>
+          </div>
+          <div className={cx('wrapper-text')}>
+            <p className={cx('text')}>
+              Maximum flexibility to <br /> meet your needs{' '}
+            </p>
+          </div>
+          <div className={cx('wrapper-text')}>
+            <p className={cx('text')}>
+              24/7 direct contact <br /> with us{' '}
+            </p>
+          </div>
         </div>
-        <div className={cx('wrapper-text')}>
-          <p className={cx('text')}>
-            Maximum flexibility to <br /> meet your needs{' '}
-          </p>
+        <div className={cx('lights-wrapper')}>
+          <span className={cx('light')}></span>
+          <span className={cx('light')}></span>
+          <span className={cx('light')}></span>
+          <span className={cx('light')}></span>
+          <span className={cx('light')}></span>
+          <span className={cx('light')}></span>
+          <img src={line} alt="" loading="lazy" aria-hidden="true" className={cx('line-image')} />
         </div>
-        <div className={cx('wrapper-text')}>
-          <p className={cx('text')}>
-            24/7 direct contact <br /> with us{' '}
-          </p>
-        </div>
-      </div>
-      <div className={cx('lights-wrapper')}>
-        <span className={cx('light')}></span>
-        <span className={cx('light')}></span>
-        <span className={cx('light')}></span>
-        <span className={cx('light')}></span>
-        <span className={cx('light')}></span>
-        <span className={cx('light')}></span>
-        <img src={line} alt="" loading="lazy" aria-hidden="true" />
-      </div>
-      <div className={cx('content')}>
-        <div className={cx('wrapper-text')}>
-          <p className={cx('text')}>
-            Personalized approach <br /> towards each case
-          </p>
-        </div>
-        <div className={cx('wrapper-text')}>
-          <p className={cx('text')}>
-            No job is too <br /> small
-          </p>
-        </div>
-        <div className={cx('wrapper-text')}>
-          <p className={cx('text')}>
-            We are creative, inspired, curious, <br /> logic and open to critic
-          </p>
+        <div className={cx('content')}>
+          <div className={cx('wrapper-text')}>
+            <p className={cx('text')}>
+              Personalized approach <br /> towards each case
+            </p>
+          </div>
+          <div className={cx('wrapper-text')}>
+            <p className={cx('text')}>
+              No job is too <br /> small
+            </p>
+          </div>
+          <div className={cx('wrapper-text')}>
+            <p className={cx('text')}>
+              We are creative, inspired, curious, <br /> logic and open to critic
+            </p>
+          </div>
         </div>
       </div>
       <div className={cx('link-wrapper')}>

@@ -8,24 +8,32 @@
   text-align: center;
 }
 
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin-top: 88px;
+
+  @include lg-down {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
 .content {
   display: flex;
   column-gap: 300px;
   align-items: center;
 
-  &:nth-child(2) {
-    justify-content: start;
-  }
-
-  &:nth-child(4) {
-    justify-content: end;
-    margin-top: 20px;
+  @include lg-down {
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: space-between;
   }
 }
 
 .lights-wrapper {
   position: relative;
-  margin-top: 20px;
 }
 
 .light {
@@ -99,6 +107,10 @@
       }
     }
   }
+}
+
+.line-image {
+  width: 100%;
 }
 
 .wrapper-text {
