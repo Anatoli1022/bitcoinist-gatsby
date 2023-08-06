@@ -1,6 +1,10 @@
 .web {
-  padding-top:80px;
-  padding-bottom: 200px;
+  padding-top: 80px;
+  padding-bottom: 150px;
+
+  @include sm-down {
+    padding-bottom: 60px;
+  }
 }
 
 .wrapper {
@@ -17,5 +21,9 @@
   &:nth-of-type(2) {
     color: #fff;
     text-shadow: 1px 1px 0 #2a524c, -1px 1px 0 #2a524c, 1px -1px 0 #2a524c, -1px -1px 0 #2a524c;
+  }
+
+  @include sm-down {
+    font-size: 48px;
   }
 }
