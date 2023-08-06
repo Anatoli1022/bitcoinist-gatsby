@@ -11,5 +11,22 @@
   column-gap: 40px;
   align-items: center;
   justify-content: center;
+  width: 100%;
   margin-top: 72px;
+  overflow: hidden;
+
+  @include md-down {
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
 }
