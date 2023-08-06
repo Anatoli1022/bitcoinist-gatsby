@@ -2,7 +2,7 @@
   padding-bottom: 160px;
   margin-top: 190px;
 
-  @include sm-down {
+  @include md-down {
     padding-bottom: 80px;
     margin-top: 80px;
   }
@@ -14,13 +14,13 @@
   justify-content: space-around;
   margin-top: 64px;
 
-  @include sm-down {
+  @include md-down {
     flex-direction: column;
   }
 }
 
 .wrapper-light {
-  @include sm-down {
+  @include md-down {
     order: -1;
   }
 }
@@ -42,8 +42,9 @@
     margin-top: 140px;
   }
 
-  @include sm-down {
-    padding: 32px 40px 48px;
+  @include md-down {
+    padding-right: 40px;
+    padding-left: 40px;
     margin-top: 32px;
 
     &:last-child {
@@ -65,7 +66,7 @@
     box-shadow: 0 0 10px 2px $color-secondary;
   }
 
-  @include sm-down {
+  @include md-down {
     &::before {
       display: none;
     }
@@ -85,7 +86,7 @@
     box-shadow: 0 0 10px 2px $color-secondary;
   }
 
-  @include sm-down {
+  @include md-down {
     &::before {
       display: none;
     }
