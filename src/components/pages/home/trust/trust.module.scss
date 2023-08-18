@@ -5,17 +5,19 @@
 }
 
 .wrapper-images {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  column-gap: 50px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   margin-top: 72px;
   overflow: hidden;
+}
+
+.container-images {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
 
   @include md-down {
+    display: block;
     white-space: nowrap;
     animation: marquee 10s linear infinite;
 
