@@ -13,17 +13,56 @@ const Technologies = () => (
         Our <span className={cx('title-span')}> technologies</span>
       </h2>
       <div className={cx('wrapper-images')}>
-        <div>
-          <StaticImage src="../../../../images/css.png" alt="css" loading="lazy" />
-          <StaticImage src="../../../../images/java.png" alt="java" loading="lazy" />
-          <StaticImage src="../../../../images/company.png" alt="company" loading="lazy" />
-          <StaticImage src="../../../../images/js.png" alt="java script" loading="lazy" />
-        </div>
-        <div>
-          <StaticImage src="../../../../images/tagline_here.png" alt="" loading="lazy" />
-          <StaticImage src="../../../../images/goes.png" alt="" loading="lazy" />
-          <StaticImage src="../../../../images/tagline.png" alt="" loading="lazy" />
-          <StaticImage src="../../../../images/here.png" alt="" loading="lazy" />
+        <div className={cx('container-images')}>
+          <StaticImage
+            src="../../../../images/css.png"
+            alt="css"
+            loading="lazy"
+            className={cx('image')}
+          />
+          <StaticImage
+            src="../../../../images/java.png"
+            alt="java"
+            loading="lazy"
+            className={cx('image')}
+          />
+          <StaticImage
+            src="../../../../images/company.png"
+            alt="company"
+            loading="lazy"
+            className={cx('image')}
+          />
+          <StaticImage
+            src="../../../../images/js.png"
+            alt="java script"
+            loading="lazy"
+            className={cx('image')}
+          />
+
+          <StaticImage
+            src="../../../../images/tagline_here.png"
+            alt=""
+            loading="lazy"
+            className={cx('image')}
+          />
+          <StaticImage
+            src="../../../../images/goes.png"
+            alt=""
+            loading="lazy"
+            className={cx('image')}
+          />
+          <StaticImage
+            src="../../../../images/tagline.png"
+            alt=""
+            loading="lazy"
+            className={cx('image')}
+          />
+          <StaticImage
+            src="../../../../images/here.png"
+            alt=""
+            loading="lazy"
+            className={cx('image')}
+          />
         </div>
       </div>
     </div>
