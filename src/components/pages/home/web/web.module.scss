@@ -8,11 +8,33 @@
 }
 
 .wrapper {
-  overflow: visible;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    content: '';
+    background: linear-gradient(to left, rgb(245 245 245 / 0%) 0%, rgb(255 255 255) 100%);
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    content: '';
+    background: linear-gradient(to right, rgb(245 245 245 / 0%) 0%, rgb(255 255 255) 100%);
+  }
 }
 
 .text {
   display: block;
+  margin-left: -20px;
   font-size: 120px;
   font-weight: 800;
   text-align: center;

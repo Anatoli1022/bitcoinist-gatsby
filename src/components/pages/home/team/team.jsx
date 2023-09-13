@@ -7,8 +7,12 @@ const cx = classNames.bind(styles);
 
 const Team = () => (
   <div className={cx('team')}>
-    <span className={cx('text')}>UX _ Our Team _ Our Team_Our Team</span>
-    <span className={cx('text')}>UX _Our Team _ Our Team_Our Team</span>
+    <div className="container">
+      <div className={cx('wrapper')}>
+        <span className={cx('text')}>Our Team _ Our Team_Our Team</span>
+        <span className={cx('text')}>Our Team _ Our Team_Our Team</span>
+      </div>
+    </div>
   </div>
 );
 
